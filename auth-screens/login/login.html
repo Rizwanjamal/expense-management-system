@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="../../index.js" ></script>
+  <script src="./login.js" ></script>
+
+</head>
+<body>
+  <div class="container-sm">
+    <div class="mt-5 d-flex flex-row justify-content-center">
+      <h1>Login Form</h1>
+    </div>
+    <form id="loginForm" class="needs-validation" novalidate onsubmit="login(event)">
+        <div class="mb-3 position-relative">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="mb-3 position-relative">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="../signup/signup.html">Don't have an account ? Click Here To Sign Up !</a>
+        </div>
+    </form>
+  </div>
+</body>
+</html>
